@@ -1,0 +1,31 @@
+@import 'base';
+@import 'mixin';
+
+footer {
+    width: 100%;
+    background-color: $gray;
+    font-family: 'didot';
+    margin-top: 60px;
+    @include tab {
+        margin-top: 30px;
+    }
+    .footer-inner {
+        margin: 0 auto;
+        max-width: 1120px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-block: 10px;
+        @include tab {
+            padding-block: 5px;
+            font-size: 0.5rem;
+        }
+    }
+    p {
+        background-color: #fff;
+        padding-block: 20px;
+        @include tab {
+            padding-block: 10px;
+            font-size: 0.5rem;
+        }
+    }
+}
